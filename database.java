@@ -54,7 +54,7 @@ public class database {
 
             // Fetch and display data from the table
             Statement selectStatement = connection.createStatement();
-           String selectQuery = "SELECT * FROM " + tableName + " LIMIT 3";
+           String selectQuery = "SELECT * FROM " + tableName ;
             ResultSet resultSet = selectStatement.executeQuery(selectQuery);
 
             while (resultSet.next()) {
